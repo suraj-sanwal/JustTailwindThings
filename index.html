@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                gray: '#d3d3d5',
+                bgcolor: '#F7FBFE',
+              },
+              width: {
+                profileWidth: 'calc(100% - 70px)'
+              },
+              boxShadow: {
+                custom: '0 0 10px 4px rgb(0 0 0 / 6%)'
+              },
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <div class="container w-full h-screen lg:m-10 mx-1 my-10">
+        <div class="md:w-4/5 md:max-lg:w-full w-11/12 mx-auto">
+            <div class="flex flex-col md:flex-row rounded-lg shadow-custom w-full">
+                <!-- Div-1 -->
+                <div class="image relative md:max-lg:order-1 md:max-lg:w-96 md:max-lg:h-full md:w-80 w-full md:h-48 h-60 md:rounded-tl-lg md:rounded-bl-lg md:rounded-tr-none rounded-tl-lg rounded-tr-lg">
+                    <img src="./images/like.png" alt="Like" class="absolute lg:w-5 lg:h-5 h-8 w-8 md:left-0 right-0 cursor-pointer md:ml-2 md:mr-0 mr-2 mt-3">
+                    <img src="./images/house.jpg" class="w-full h-full object-cover md:rounded-tl-lg md:rounded-bl-lg md:rounded-tr-none rounded-tl-lg rounded-tr-lg shadow-md">
+                </div>
+                <!-- Div-2 -->
+                <div class="price flex md:max-lg:order-3 justify-center flex-col md:max-lg:p-3 p-5 grow">
+                    <div class="flex md:max-lg:flex-col justify-between">
+                        <p class="uppercase text-base md:max-lg:text-sm">Detached House</p>
+                        <p class="uppercase text-base bullet md:max-lg:ml-0 ml-6"> •5Y Old</p>
+                    </div>
+                    <h2 class="font-semibold text-3xl md:max-lg:text-2xl">$750,000</h2>
+                    <p class="text-gray text-base font-medium md:max-lg:text-sm">742 Evergreen Terrace</p>
+                </div>
+                <!-- Div-3(group) -->
+                <div class="group flex md:max-lg:order-2 md:flex-row md:max-lg:flex-col flex-col-reverse w-auto grow md:max-lg:border md:max-lg:border-l-0 md:max-lg:border-b-0 md:max-lg:border-t-0 md:max-lg:border-r-1 md:max-lg:border-gray">
+                    <div class="reatilor md:max-lg:p-3 p-5 grow flex justify-center flex-col md:max-lg:bg-none bg-bgcolor h-auto lg:border lg:border-y-0 lg:border-gray">
+                        <h4 class="uppercase text-lg text-gray font-bold mb-1 md:max-lg:text-base">retailor</h4>
+                        <div class="flex">
+                            <div class="w-12 h-12 rounded-full flex">
+                                <img src="./images/profile.png" class="w-full h-full object-cover rounded-full" alt="">
+                            </div>
+                            <div class="ml-2 w-profileWidth">
+                                <p class="text-base md:max-lg:text-sm">Tiffany Heffner</p>
+                                <p class="text-gray font-medium md:max-lg:text-sm">(555) 555-4321</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats grow md:max-lg:p-3 p-5 flex flex-row justify-between md:max-lg:justify-center md:max-lg:border-b-0 lg:justify-center md:flex-col lg:bg-bgcolor border border-y-1 border-x-0 border-gray lg:border-0 lg:border-y-0 lg:border-none h-auto">
+                        <div class="flex items-center mb-2">
+                            <img src="./images/bed.png" class="w-8 h-8"alt="">
+                            <p class="text-base ml-3"><b>3 </b>Bedrooms</p>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="./images/bath.png" class="w-8 h-8"alt="">
+                            <p class="text-base ml-3"><b>2</b> Bathrooms</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
